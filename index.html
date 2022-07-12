@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- *************************** Challenge #1 ********************************* -->
     <div class="container text-center container1">
         <h1 class="title"><b>Challenge #1 - </b>Your Age In Days</h1>
         <button id="clickHere" class="btns btn btn-primary" onclick="ageIndays()">Start Here</button>
@@ -20,12 +21,43 @@
         <div class="output"></div>
     </div>
 
+    <!-- *************************** Challenge #2 ********************************* -->
     <div class="container text-center container2">
         <h1 class="title"><b>Challenge #2 - </b>Random Images Generator</h1>
         <button class="btn btns btn-success" id="gen-btn" onclick="genrateImages()">Generate</button>
         <button id="stop" class="btns btn btn-danger" onclick="stop()">Stop</button>
         <div id="main2">
             <!-- Images are here -->
+        </div>
+    </div>
+
+    <!-- *************************** Challenge #3 ********************************* -->
+    <div class="container text-center container3">
+        <h1 class="title"><b>Challenge #3 - </b>Rock, Paper, Scissors</h1>
+        <div class="images" id="rps-div">
+            <img src="img/rock.png" class="rps" id="rock" onclick="rps(this)">
+            <img src="img/paper.png" class="rps" id="paper" onclick="rps(this)">
+            <img src="img/scissor.png" class="rps" id="scissors" onclick="rps(this)">
+        </div>
+        <button id="Refresh" class="btns btn btn-danger" onclick="document.location.reload(true)">Try Again</button>
+    </div>
+
+
+    <!-- *************************** Challenge #4 ********************************* -->
+    <div class="container text-center container4">
+        <h1 class="title"><b>Challenge #4 </b>- Change Buttons Color</h1>
+        <select name="select" id="changebtn">
+            <option value="random">Random</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Green">Reset</option>
+        </select>
+
+        <div class="four-btn">
+            <button class="four-btns">Button</button>
+            <button class="four-btns">Button</button>
+            <button class="four-btns">Button</button>
+            <button class="four-btns">Button</button>
         </div>
     </div>
     <script src="script.js"></script>

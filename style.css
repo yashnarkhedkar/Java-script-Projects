@@ -50,3 +50,56 @@ body {
 #stop{
     display: none;
 }
+
+#stop2{
+    display: none;
+}
+
+.container3{
+    background-color: #ffe8cb;
+}
+
+#Refresh{
+    display: none;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images .rps{
+    border: 2px solid black;
+    border-radius: 30%;
+    width: 15rem;
+    height: 15rem;
+}
+.images img:hover{
+    cursor: pointer;
+    box-shadow: rgb(255 59 0 / 63%) 0px 7px 29px 0px;
+}
+
+/* <!-- *************************** Challenge #4 ********************************* --> */
+.container4{
+    background-color: rgb(197 255 186);
+}
+
+.container4 select{
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+.four-btns{
+    width: 10rem;
+    height: 3rem;
+    background-color: black;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+}
