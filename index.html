@@ -46,12 +46,14 @@
     <!-- *************************** Challenge #4 ********************************* -->
     <div class="container text-center container4">
         <h1 class="title"><b>Challenge #4 </b>- Change Buttons Color</h1>
-        <select name="select" id="changebtn">
-            <option value="random">Random</option>
-            <option value="Red">Red</option>
-            <option value="Green">Green</option>
-            <option value="Green">Reset</option>
-        </select>
+        <form action="">
+            <select name="select" id="changebtn" onchange="btncolorChange(this)">
+                <option value="reset">Reset</option>
+                <option value="random" onclick="random()">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+            </select>
+        </form>
 
         <div class="four-btn">
             <button class="four-btns">Button</button>
