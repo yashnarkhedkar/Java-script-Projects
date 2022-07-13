@@ -71,13 +71,13 @@ function decideWinner(human, bot) {
 
 function finalMessage([yourScore]) {
     if (yourScore === 0) {
-        return { 'message': 'You lost!', 'color': 'red' };
+        return { 'message': 'You lost!', 'color': '#ff5050' };
     }
     else if (yourScore === 0.5) {
-        return { 'message': 'You Tied!', 'color': 'Yellow' };
+        return { 'message': 'You Tied!', 'color': '#ffd500' };
     }
     else {
-        return { 'message': 'You Win!', 'color': 'Green' };
+        return { 'message': 'You Win!', 'color': '#26ff26' };
     }
 }
 
