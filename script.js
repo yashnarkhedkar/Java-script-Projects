@@ -109,6 +109,14 @@ function rpsFrontEnd(human, bot, message) {
 
     resetbtn.style.display = "block";
     resetbtn.style.margin = "auto";
+    
+    const mediaQuery = window.matchMedia('(max-width: 540px)')
+    if (mediaQuery.matches) {
+        humanDiv.innerHTML = "<h2 style='font-family: poppins;'>Your choice</h2> <br> <img src='" + imageDatabase[human] + "' height = 80px width=80px style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);'>"
+        messageDiv.innerHTML = "<br> <br> <h1 style='color: " + message['color'] + "; font-size: 40px; padding: 30px; font-family: poppins;'>" + message['message'] + "</h1>";
+        botDiv.innerHTML = "<h2>Bot choice</h2> <br> <img src='" + imageDatabase[bot] + "' height = 80px width=80px style='box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);'>"
+        resetbtn.style.fontSize = "15px";
+    }
 }
 
 function rps(yourChoice) {
