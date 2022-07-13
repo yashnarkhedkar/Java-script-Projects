@@ -79,6 +79,19 @@ body {
     box-shadow: rgb(255 59 0 / 63%) 0px 7px 29px 0px;
 }
 
+@media screen and (max-width: 800px){
+    .images .rps{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .images .rps{
+        width: 6rem;
+        height: 6rem;
+    }
+}
 /* <!-- *************************** Challenge #4 ********************************* --> */
 .container4{
     background-color: rgb(197 255 186);
