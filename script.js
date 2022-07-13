@@ -77,7 +77,7 @@ function finalMessage([yourScore]) {
         return { 'message': 'You Tied!', 'color': '#ffd500' };
     }
     else {
-        return { 'message': 'You Win!', 'color': '#26ff26' };
+        return { 'message': 'You Win!', 'color': '#26af26' };
     }
 }
 
