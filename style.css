@@ -37,7 +37,7 @@ body {
     align-items: center;
 }
 
-.main2 {
+.main2, .blackjack_row_1, .blackjack_row_2, .blackjack_row_3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -68,17 +68,35 @@ body {
     justify-content: space-evenly;
 }
 
+#rps-div{
+    display: flex;
+}
+
 .images .rps{
     border: 2px solid black;
     border-radius: 30%;
     width: 15rem;
     height: 15rem;
 }
+
 .images img:hover{
     cursor: pointer;
     box-shadow: rgb(255 59 0 / 63%) 0px 7px 29px 0px;
 }
 
+@media screen and (max-width: 800px){
+    .images .rps{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .images .rps{
+        width: 6rem;
+        height: 6rem;
+    }
+}
 /* <!-- *************************** Challenge #4 ********************************* --> */
 .container4{
     background-color: rgb(197 255 186);
@@ -102,4 +120,34 @@ body {
     color: white;
     margin: 20px;
     font-size: 20px;
+}
+
+/* *************************** Challenge #5 ********************************* */
+.container5{
+    background-color: #fdffa6;
+}
+
+.blackjack_row_1, .blackjack_row_2{
+    background: url('img/black_jack_background.png') center;
+    box-shadow: inset 0 0 100px black;
+    color: #ffff;
+}
+
+.blackjack_row_1 div{
+    padding: 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    flex: 1;
+    height: 380px;
+}
+
+table, th, td{
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.your_box{
+    overflow: hidden;
 }
