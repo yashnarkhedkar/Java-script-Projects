@@ -237,7 +237,7 @@ function showCard(card, activePlayer) {
         if (activePlayer['score'] <= 21) {
             let cardImage = document.createElement('img');
             cardImage.src = `img/cards/${card}.png`;
-            cardImage.style.width = "2.8rem";
+            cardImage.style.width = "1.4rem";
             cardImage.style.margin = "4px 10px";
             document.querySelector(activePlayer['div']).appendChild(cardImage);
             hitSound.play();
@@ -248,7 +248,7 @@ function showCard(card, activePlayer) {
         if (activePlayer['score'] <= 21) {
             let cardImage = document.createElement('img');
             cardImage.src = `img/cards/${card}.png`;
-            cardImage.style.width = "4rem";
+            cardImage.style.width = "3rem";
             cardImage.style.margin = "6px 15px";
             document.querySelector(activePlayer['div']).appendChild(cardImage);
             hitSound.play();
